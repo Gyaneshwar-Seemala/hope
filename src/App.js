@@ -1,24 +1,42 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import GlobalStyle from './Globals/GlobalStyle';
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import Home from './Pages/Home';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+
+function NotFound() {
+  return (
+    <div>
+      <h1>404 Not Found</h1>
+      <p>The page you are looking for does not exist.</p>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <div className="App">
+        <BrowserRouter>
+          <ScrollToTop />
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </>
   );
 }
 
