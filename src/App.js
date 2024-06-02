@@ -4,6 +4,8 @@ import GlobalStyle from './Globals/GlobalStyle';
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Home from './Pages/Home';
 import Contacts from './Pages/Contacts';
+import Active from './Pages/Active';
+import Blogs from './Pages/Blogs';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -34,6 +36,8 @@ function App() {
           <ScrollToTop />
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/Active' element={<Active />} />
+            <Route path='/Blogs' element={<Blogs />} />
             <Route path='/Contact/:type' element={<Contacts />} />
           </Routes>
         </BrowserRouter>

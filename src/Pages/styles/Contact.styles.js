@@ -14,7 +14,7 @@ gap:10px;
 export const ContactImage=styled.div`
 width:50%;
 height:100%;
-border-radius:24px;
+border-radius:28px;
 display:flex;
 align-items:center;
 justify-content:center;

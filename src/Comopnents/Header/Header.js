@@ -1,13 +1,11 @@
 import React from 'react'
 import { ButtonsDiv, DonateButton, HeaderContainer, LogoContainer, LogoImg, NavLink, NavLinkContainer } from './Header.styles'
-import { useNavigate } from 'react-router-dom'
 
 function Header() {
-    const navigate=useNavigate();
   return (
     <HeaderContainer>
         <LogoContainer>
-            <LogoImg onClick={ navigate("/")} src="https://media.istockphoto.com/id/1341681278/vector/two-hands-the-concept-of-protecting-anything-vector-illustration-interconnection.jpg?s=612x612&w=0&k=20&c=QZmkMdTLOVyzaPi-SgvHy0KNa8cC47wl0b3mfPyxsM0="/>
+            <LogoImg src="https://media.istockphoto.com/id/1341681278/vector/two-hands-the-concept-of-protecting-anything-vector-illustration-interconnection.jpg?s=612x612&w=0&k=20&c=QZmkMdTLOVyzaPi-SgvHy0KNa8cC47wl0b3mfPyxsM0="/>
             <NavLink to="/">Hope</NavLink>
         </LogoContainer>
         <NavLinkContainer>

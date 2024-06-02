@@ -23,11 +23,6 @@ function Home() {
                         <CountUp
                             end={5000}
                             duration={175}
-                            onEnd={({ pauseResume, reset, start, update }) => {
-                                // Reset and start the count up again
-                                reset();
-                                start();
-                            }}
                         />+
                     </Stat>
                     <StatSub>Donors Contributed</StatSub>
@@ -38,11 +33,6 @@ function Home() {
                         <CountUp
                             end={10000}
                             duration={275}
-                            onEnd={({ pauseResume, reset, start, update }) => {
-                                // Reset and start the count up again
-                                reset();
-                                start();
-                            }}
                         />+
                     </Stat>
                     <StatSub>Families Helped</StatSub>
@@ -53,11 +43,6 @@ function Home() {
                         <CountUp
                             end={150000}
                             duration={575}
-                            onEnd={({ pauseResume, reset, start, update }) => {
-                                // Reset and start the count up again
-                                reset();
-                                start();
-                            }}
                         />+
                     </Stat>
                     <StatSub>Meals Provided</StatSub>
@@ -92,7 +77,7 @@ function Home() {
                     <LinkTextDiv>
                         <Stat>Read Blogs and Success Stories</Stat>
                         <StatSub>Explore our collection of blogs and happy stories from those who have been helped by the community. Learn about the impact your donations have made and get inspired by stories of hope and transformation.</StatSub>
-                        <HeroButton to='/Blog/Stories'>Read Stories</HeroButton>
+                        <HeroButton to='/Blogs'>Read Stories</HeroButton>
                     </LinkTextDiv>
                     <LinksImage>
                         <LinkImage src="https://miro.medium.com/v2/resize:fit:1000/0*lzyNu8ztv9-aJSyn.jpg" />
