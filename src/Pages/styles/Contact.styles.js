@@ -14,7 +14,7 @@ gap:10px;
 export const ContactImage=styled.div`
 width:50%;
 height:100%;
-border-radius:28px;
+border-radius:20px;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -35,7 +35,7 @@ font-size:80px;
 export const ContactOverlay=styled.div`
 width:100%;
 height:100%;
-border-radius:24px;
+border-radius:35px;
 display:flex;
 align-items:center;
 justify-content:center;
