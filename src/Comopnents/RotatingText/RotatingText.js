@@ -14,7 +14,7 @@ function RotatingText({ theme }) {
       <HeroSub>
         Legacy Exchange: Your Donations Help Enrich Lives and Build Stronger Communities. Support Our Mission to Foster Connections, Provide Support, and Create Positive Change. Join Us in Making a Meaningful Impact Across Generations.
       </HeroSub>
-      <HeroButton to="/donate">Donate Now</HeroButton>
+      <HeroButton to="/Contact/Donate">Donate Now</HeroButton>
     </TextWrapper>
 
   );
