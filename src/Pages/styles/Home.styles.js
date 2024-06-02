@@ -19,7 +19,7 @@ export const Overlay=styled.div`
 `;
 
 export const StatsCounter=styled.div`
-width:1300px;
+width:80%;
 height:100px;
 padding:20px;
 display:flex;
